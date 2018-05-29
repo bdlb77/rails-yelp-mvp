@@ -3,4 +3,8 @@
 	<h3><%= link_to resto.name, restaurant_path(resto) %></h3>
 	<p><%= "Category: #{resto.category}" %></p>
 	<p><%= resto.address %></p>
+	<p><%= link_to 'Destroy this restaurant', restaurant_path(resto), method: :delete  %></p>
+
 <% end %>
+
+
